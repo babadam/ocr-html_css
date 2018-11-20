@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/regal.png);
+    margin: 0;
 }
 /**** Titres ****/
 h1{
@@ -20,7 +21,6 @@ h2{
 /**** Aside ****/
 aside{
     background-color: slategray;
-    /* background-image: url(../img/piece-mini.png); */
     max-width: 13.5%;
     margin: 0;
     width: 20%;
@@ -70,7 +70,7 @@ header p img{
 /**** Sections ****/
 .conteneur-section{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 section{
     width: 30%;

@@ -1,0 +1,83 @@
+body{
+    background-image: url(../img/regal.png);
+}
+/**** Titres ****/
+h1{
+    font-family: 'Dancing Script', cursive; /*pour changer la police*/
+    font-size : 3.3em;
+    text-align: center;
+    color: pink;
+}
+h2{
+    font-family: 'Dancing Script', cursive; /*pour changer la police*/
+    font-size: 2.5em;
+    color:slategray;
+    text-align: center;
+}
+/**** Fin titres ****/
+main{
+    width: 80%;
+    margin: auto;
+}
+/**** Header ****/
+img{
+    text-align: center;
+    border-radius: 90px;;
+}
+img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+header p{
+    text-align: center;
+}
+header p img{
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+.description{
+    border: 1px solid slategray;
+    border-radius: 5px;
+    padding: 2%;
+    background: mistyrose;
+    font-family: 'Dancing Script', cursive; /*pour changer la police*/
+    font-size: 2em;
+    color:slategray;
+}
+/**** Fin header ****/
+
+/**** Sections ****/
+section{
+    width: 30%;
+    float: left;
+    background: #FFF;
+    margin-left: 2%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+    font-family: 'Muli', sans-serif;
+}
+.formation{
+    margin-bottom: 5%;
+}
+.formation p{
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+}
+.formation span{
+    color: lightcoral;
+}
+.formation span:hover{
+    color: slategray;
+    font-weight: bold;
+}
+/**** Fin sections ****/
+
+/**** Responsive ****/
+@media screen and (max-width:1050px){
+    /* Section */
+    section{
+        clear: both;
+        width: 80%;
+        margin-left: 10%;
+    }
+}

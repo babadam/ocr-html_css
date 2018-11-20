@@ -7,6 +7,7 @@ h1{
     font-size : 3.3em;
     text-align: center;
     color: pink;
+    margin: 0;
 }
 h2{
     font-family: 'Dancing Script', cursive; /*pour changer la police*/
@@ -15,9 +16,27 @@ h2{
     text-align: center;
 }
 /**** Fin titres ****/
+
+/**** Aside ****/
+aside{
+    background-color: slategray;
+    /* background-image: url(../img/piece-mini.png); */
+    max-width: 13.5%;
+    margin: 0;
+    width: 20%;
+    height: 57.2em;
+    border-radius: 10px;
+    box-shadow: 4px 0px 6px 1px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+aside p{
+    text-align: center;
+}
+/**** Fin Aside ****/
+
 main{
-    width: 80%;
-    margin: auto;
+    display: flex;
+
 }
 /**** Header ****/
 img{
@@ -43,12 +62,18 @@ header p img{
     font-size: 2em;
     color:slategray;
 }
+.conteneur-header{
+    width: 100%;
+}
 /**** Fin header ****/
 
 /**** Sections ****/
+.conteneur-section{
+    display: flex;
+    justify-content: space-between;
+}
 section{
     width: 30%;
-    float: left;
     background: #FFF;
     margin-left: 2%;
     margin-top: 5%;
@@ -73,11 +98,16 @@ section{
 /**** Fin sections ****/
 
 /**** Responsive ****/
-@media screen and (max-width:1050px){
+@media screen and (max-width:1024px){
     /* Section */
+    .conteneur-section{
+        display: block;
+    }
     section{
-        clear: both;
         width: 80%;
-        margin-left: 10%;
+        margin: auto;
+    }
+    aside{
+        display: none;
     }
 }
